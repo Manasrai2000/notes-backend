@@ -112,4 +112,14 @@
 - jsonwebtoken
 - dotenv
 
----
+## Project Structure
+
+- **src/**: Main source code folder
+  - **controllers/**: Route handler logic for API endpoints (auth, user, notes)
+  - **models/**: Database access and business logic for users, profiles, and notes
+  - **routes/**: Route definitions for API endpoints
+  - **database/**: Database connection and setup (SQLite)
+  - **utils/**: Utility functions (e.g., JWT token generation)
+  - **app.js**: Express app setup and middleware
+- **server.js**: Entry point to start the server
+- **.env**: Environment variables (e.g., SECRET_KEY)
