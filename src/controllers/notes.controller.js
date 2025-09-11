@@ -49,7 +49,7 @@ async function updateNote(req, res) {
       return res.status(404).json({ message: "Note not found" });
     }
 
-    return res.json({ message: "Note updated" });
+    return res.json({ message: "Note updated successfully" });
   } catch (error) {
     console.error("Update Note error:", error.message);
     return res.status(500).json({ error: "Server error" });
@@ -68,7 +68,7 @@ async function deleteNote(req, res) {
       return res.status(404).json({ message: "Note not found" });
     }
 
-    return res.json({ message: "Note deleted" });
+    return res.json({ message: "Note deleted successfully" });
   } catch (error) {
     console.error("Delete Note error:", error.message);
     return res.status(500).json({ error: "Server error" });
